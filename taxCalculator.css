@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #efe9e0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+}
+
+.header {
+    text-align: center;
+    padding: 10px;
+    background-color: #131313;
+    color: white;
+}
+
+
+.content {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#taxForm {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#taxForm > p {
+    grid-column: span 2;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+td {
+    padding: 5px 30px;
+}
+
+#result > p {
+    margin: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer > p {
+    background-color: #131313;
+    color: #e0e0e0;
+    text-align: center;
+    padding:0.5rem 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* CSS */
+
+.button-21 {
+    position: absolute;
+    left: 50%;
+  align-items: center;
+  appearance: none;
+  /* background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%); */
+  background-color: #06253a;
+  background-image: linear-gradient(1deg, #0b0c11, #244242 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.button-21:active,
+.button-21:focus {
+  outline: none;
+}
+
+.button-21:hover {
+  background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}

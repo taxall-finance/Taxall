@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxall - Tax & Finance Solutions</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header>
+        <h1>Taxall</h1>
+        <p>Strategic Tax Planning & Financial Advisory</p>
+    </header>
+    <!-- Added Menu Elements -->
+    <div class="menu-toggle" id="menuToggle">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+    </div>
+
+    <div class="auth-menu" id="authMenu">
+        <a href="#login">Login</a>
+        <a href="#signup">Create Account</a>
+    </div>
+
+    <div class="content">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Resources</a>
+            <a href="#about">Services</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    
+        <main>
+            <section id="home">
+                <h2>About Taxall</h2>
+                <p>Taxall empowers individuals and businesses with tailored financial strategies, ensuring compliance while maximizing fiscal efficiency in today's dynamic economic landscape.</p>
+            </section>
+    
+            <section id="projects">
+                <h2>Key Resources</h2>
+                <div class="project">
+                    <h3>Income tax calculator</h3>
+                    <p>Advanced frameworks for corporate and individual tax efficiency.</p>
+                    <button onclick="window.location.href='./taxCalculator.html'">Access Toolkit</button>
+                </div>
+                <div class="project">
+                    <h3>Regulatory Compliance Hub</h3>
+                    <p>Up-to-date guides for evolving tax legislation across jurisdictions.</p>
+                    <button onclick="window.location.href='https://www.example.com'">View Compliance Resources</button>
+                </div>
+            </section>
+    
+            <section id="about">
+                <h2>Our Expertise</h2>
+                <p>Certified professionals with 15+ years experience in international tax law, audit defense, and strategic wealth management.</p>
+            </section>
+    
+            <section id="contact">
+                <h2>Your Tax Query</h2>
+                <form id="contactForm" action="https://formspree.io/f/mkgoozrq" method="POST">
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Your message" rows="5" required></textarea>
+                    <button type="submit">Send Query</button>
+                </form>
+                <div id="form-message"></div>
+            </section>
+        </main>  
+        <footer>
+            <p>&copy; 2024 Taxall. All Rights Reserved. | Finance & Tax Advisory Services</p>
+        </footer>  
+    </div>
+    
+    
+
+    <script src="./index.js"></script>
+</body>
+</html>

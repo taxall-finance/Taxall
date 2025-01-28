@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Tax Calculator</title>
+    <link rel="stylesheet" href="./taxCalculator.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">Income Tax Calculator</h1>
+        <div class="content">
+            <form id="taxForm">
+                <p>A. Income Details</p>
+                <!-- <div> -->
+                    <label for="incomeFromSalary">Income from Salary:</label>
+                    <input type="number" id="incomeFromSalary" placeholder="₹ 0" required>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="rentalIncome">Rental Income:</label>
+                    <input type="number" id="rentalIncome" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="incomeFromInterest">Income from Interest:</label>
+                    <input type="number" id="incomeFromInterest" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="incomeFromOtherSources">Income from Other Sources:</label>
+                    <input type="number" id="incomeFromOtherSources" placeholder="₹ 0">
+                <!-- </div> -->
+    
+                <p>B. Excemption Details</p>
+                <!-- <div> -->
+                    <label for="exemptAllowances">Exempt Allowances <br/> (HRA, LTA, Professional Tax etc.):</label>
+                    <input type="number" id="exemptAllowances" placeholder="₹ 0">
+                <!-- </div> -->
+    
+                <p>C. Deduction Details</p>
+                <!-- <div> -->
+                    <label for="applyStandardDeduction">Apply Standard Deduction:</label>
+                    <select id="applyStandardDeduction">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="basicDeductions">80C - Basic Deductions:</label>
+                    <input type="number" id="basicDeductions" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="medicalInsurance">80D - Medical Insurance:</label>
+                    <input type="number" id="medicalInsurance" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="donations">80G - Donations to Charity:</label>
+                    <input type="number" id="donations" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="homeLoanInterest">24B - Interest on Home Loan:</label>
+                    <input type="number" id="homeLoanInterest" placeholder="₹ 0">
+                <!-- </div> -->
+                <!-- <div> -->
+                    <label for="otherDeductions">Other Deductions:</label>
+                    <input type="number" id="otherDeductions" placeholder="₹ 0">
+                <!-- </div> -->
+                 <div class="button">
+                    <button class="button-21" type="button" onclick="calculateTax()">Calculate Tax</button>
+                 </div>
+            </form>
+    
+            <!-- Result -->
+            <div class="results" id="results" style="display:none;">
+                <p id="result"></p>
+            </div>
+        </div>   
+        
+        <footer>
+            <p>&copy; 2024 Taxall. All Rights Reserved. | Finance & Tax Advisory Services</p>
+        </footer>
+    </div>
+
+
+    <script src="./taxCalculator.js"></script>
+</body>
+</html>
+
